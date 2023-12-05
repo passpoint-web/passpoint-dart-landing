@@ -13,7 +13,10 @@ const Footer = () => {
     <footer className="w-full bg-secondary-5 p-[90px_0_24px] font-haken bg-[url(/footer.png)] bg-no-repeat bg-contain bg-right tab:py-[50px]">
       <div className="w-[80%] mx-auto flex justify-between flex-wrap gap-10 md:w-[90%]">
         <section className="tab:order-3">
-          <Link href="/" className="[&>:first-child]:mb-[24px] tab:[&>:first-child]:mb-4">
+          <Link
+            href="/"
+            className="[&>:first-child]:mb-[24px] tab:[&>:first-child]:mb-4"
+          >
             <Image src={Logo} alt="passpoint logo" />
           </Link>
           <ul className="flex flex-col gap-5 text-[14px] sm:text-[13px] text-secondary-6">
@@ -22,13 +25,21 @@ const Footer = () => {
               registration number 7127499.
             </li>
             <li className="inline-flex gap-[24px] items-center tab:gap-[16px]">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              {/* <a href="#" target="_blank" rel="noopener noreferrer">
                 <Image src={Fb} alt="passpoint facebook" />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              </a> */}
+              <a
+                href="https://instagram.com/darttech_?igshid=NzZlODBkYWE4Ng=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image src={Instagram} alt="passpoint instagram" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/darttech_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image src={Twitter} alt="twitter" className="text-primary" />
               </a>
             </li>
@@ -51,12 +62,12 @@ const Footer = () => {
           <ul className="grid gap-6 mt-6 text-[14px] text-secondary-6 tab:gap-4 tab:mt-4">
             <li className="inline-flex gap-2 items-center">
               <Image src={Message} alt="icon" />
-              <a href="mailto:hello@dart.co">hello@dart.co</a>
+              <a href="mailto:dart@mypasspoint.com">dart@mypasspoint.com</a>
             </li>
-            <li className="inline-flex gap-2 items-center">
+            {/* <li className="inline-flex gap-2 items-center">
               <Image src={Phone} alt="icon" />
               <a href="tel:+2349876543210">+234 98765 43210</a>
-            </li>
+            </li> */}
             <li className="inline-flex gap-2 items-center">
               <Image src={Location} alt="icon" />8 The Green STE R, Dover, DE
               19901
@@ -70,8 +81,21 @@ const Footer = () => {
           rights reserved
         </p>
         <article>
-          <Link href="#">Terms & Conditions</Link> |{" "}
-          <Link href="#">Privacy Policy</Link>
+          <a
+            href="https://mypasspoint.com/terms_and_conditions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Terms & Conditions
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://mypasspoint.com/privacy_policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
         </article>
       </div>
     </footer>

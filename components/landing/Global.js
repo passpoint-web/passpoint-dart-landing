@@ -8,24 +8,28 @@ const globalData = [
   {
     image: Global1,
     title: "Virtual Accounts",
+    data: "fade-right",
     subtitle:
       "Create Virtual Accounts in your desired currency  (EUR, GBP, CAD, NGN, KES, GHS etc) and seamlessly transact between currencies",
   },
   {
     image: Global2,
     title: "Global Settlements",
+    data: "fade-left",
     subtitle:
       "Effortlessly settle funds worldwide within 24 hours and conduct global payments through SWIFT, Fedwire, Chaps, FPS, and other channels.",
   },
   {
     image: Global3,
     title: "Virtual cards",
+    data: "fade-right",
     subtitle:
       "Issue virtual payment cards through a bespoke API to provide unmatched features",
   },
   {
     image: Global4,
     title: "Global Collections",
+    data: "fade-left",
     subtitle:
       "Expand your market reach with our Global Collections API, enabling you to seamlessly accept both local and international payments, including cards and alternative payment methods, across diverse markets.",
   },
@@ -40,8 +44,12 @@ const Global = () => {
         </h1>
         <section className="w-[70%] mx-auto grid grid-cols-fluid gap-x-8 gap-y-14 mt-11 md:w-full md:grid-cols-fluidMedium tab:gap-y-9">
           {globalData.map((item, i) => (
-            <div className="" key={i}>
-              <Image src={item.image} alt="icons" className="md:w-14 tab:w-10" />
+            <div className="" key={i} data-aos={item.data}>
+              <Image
+                src={item.image}
+                alt="icons"
+                className="md:w-14 tab:w-10"
+              />
               <h3 className="text-[24px] leading-none text-secondary-1 font-haken font-bold m-[30px_0_10px] md:text-[18px]">
                 {item.title}
               </h3>

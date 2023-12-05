@@ -9,7 +9,7 @@ import Payout from "@/components/landing/Payout";
 
 export default function Home() {
   return (
-    <main className="bg-primary-2">
+    <main className="bg-primary-2 overflow-hidden">
       <Hero />
       <Partner />
       <CardPortal />

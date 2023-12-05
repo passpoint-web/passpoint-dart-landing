@@ -1,7 +1,8 @@
 import { Hanken_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import { AOSInit } from "@/components/ui/Aos";
+import 'animate.css';
 
 const haken = Hanken_Grotesk({
   subsets: ["latin"],
@@ -22,9 +23,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <AOSInit />
       <meta name="theme-color" content="#6F4183" />
       <body className={`${inter.variable} ${haken.variable}`}>
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer />
       </body>
