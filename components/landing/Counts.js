@@ -30,7 +30,12 @@ const countData = [
 const Counts = () => {
   return (
     <main className="min-h-[400px] custom-gradient grid place-items-center py-10 tab:py-[20px] tab:min-h-0">
-      <div className="w-[80%] mx-auto py-8 bg-primary-2 rounded-[8px] shadow-[0px_10px_20px_0px_rgba(41,41,42,0.07)] grid grid-cols-fluidMedium gap-8 md:w-[90%] tab:grid-cols-fluidSmall tab:gap-x-4 tab:gap-y-8">
+      <div
+        className="w-[80%] mx-auto py-8 bg-primary-2 rounded-[8px] shadow-[0px_10px_20px_0px_rgba(41,41,42,0.07)] grid grid-cols-fluidMedium gap-8 md:w-[90%] tab:grid-cols-fluidSmall tab:gap-x-4 tab:gap-y-8"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="500"
+      >
         {countData.map((item, i) => (
           <div className="flex flex-col items-center justify-center" key={i}>
             <Image
