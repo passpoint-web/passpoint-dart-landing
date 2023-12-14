@@ -51,7 +51,13 @@ const Footer = () => {
           </h3>
           <nav className="grid gap-3 mt-6 text-secondary-6 text-[14px] tab:mt-4">
             <Link href="#">Sign In</Link>
-            <Link href="#">API documentation</Link>
+            <a
+              href="https://documenter.getpostman.com/view/606896/2s9YkgEm59"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              API documentation
+            </a>
             <Link href="#">Payment Links</Link>
           </nav>
         </section>

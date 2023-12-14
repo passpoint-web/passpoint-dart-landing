@@ -3,7 +3,7 @@ import ButtonLink from "../ui/ButtonLink";
 
 const JoinUs = () => {
   return (
-    <div className="py-[73px] bg-primary-1 bg-[url(/pattern.svg)] bg-no-repeat bg-contain bg-[center_right_20%] mt-[200px]">
+    <div className="py-[73px] bg-primary-1 bg-[url(/pattern.svg)] bg-no-repeat bg-contain bg-[center_right_20%] mt-[250px] tab:mt-[150px]">
       <section
         data-aos="fade-right"
         data-aos-duration="1000"
