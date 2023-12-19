@@ -1,6 +1,6 @@
 const Payment = () => {
   return (
-    <div className="h-[70vh] bg-[url(/payment-link.png)] bg-cover bg-no-repeat relative tab:bg-stretch tab:h-[50vh]">
+    <div className="h-[70vh] bg-[url(/new-payment.png)] bg-cover bg-no-repeat relative tab:bg-stretch tab:h-[50vh]">
       <div
         data-aos="fade-left"
         data-aos-duration="1000"
